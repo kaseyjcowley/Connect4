@@ -1,0 +1,43 @@
+.Board, .Board__btns {
+  display: flex;
+  justify-content: space-between;
+  width: 595px;
+}
+
+.Board__slot, .Board__btn {
+  min-height: 75px;
+  min-width: 75px;
+}
+
+.Board {
+  height: 510px;
+  background-color: #009ACD;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.Board__slot {
+  flex: 1;
+  flex-basis: calc(100 / 7);
+  background-color: white;
+  border-radius: 50%;
+  margin: 5px;
+} 
+
+.Board__slot--red {
+  background-color: red;
+}
+
+.Board__slot--black {
+  background-color: black;
+}
+
+.Board__btns {
+  margin: 10px auto;
+}
+
+.Board__btn {
+  border: 1px solid;
+  cursor: pointer;
+}
